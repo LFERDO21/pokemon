@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokem</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div>
+        <form action="" onsubmit="searchPokemon(event)">
+            <input type="text" name="pokemon" autocomplete="off">
+        </form>
+        <!-- Contenido de la card -->
+        <div b-data-poke-card class="poke-card">
+            <div b-data-poke-name class="bagtag">Buscando al pokemon </div>   <!-- Nombre -->
+            <!-- Contenedoor Imagen -->
+            <div b-data-poke-img-container class="img-container">
+                <img b-data-poke-img class="poke-img" src="img/Buscando.jpg"/><!-- Imagen -->
+            </div>
+            <!-- Contenedoor Imagen -->
+            <div b-data-poke-id class="bagtag"></div>
+            <div b-data-poke-types class="poke-types"></div>
+            <div b-data-poke-stats class="poke-stats"></div>
+        </div>
+        <!-- Contenido de la card -->
+    </div>
+</body>
+</html> 

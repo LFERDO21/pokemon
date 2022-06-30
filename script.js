@@ -1,12 +1,11 @@
-const pokeCard = document.querySelector('[data-poke-card]');
-const pokeName = document.querySelector('[data-poke-name]');
-const pokeImg = document.querySelector('[data-poke-img]');
-const pokeImgContainer = document.querySelector('[data-poke-img-container]');
-const pokeId = document.querySelector('[data-poke-id]');
-const pokeTypes = document.querySelector('[data-poke-types]');
-const pokeStats = document.querySelector('[data-poke-stats]');
+const pokeCard = document.querySelector('[b-data-poke-card]');
+const bPokeName = document.querySelector('[b-data-poke-name]');
+const pokeImg = document.querySelector('[b-data-poke-img]');
+const pokeImgContainer = document.querySelector('[b-data-poke-img-container]');
+const pokeId = document.querySelector('[b-data-poke-id]');
+const pokeTypes = document.querySelector('[b-data-poke-types]');
+const pokeStats = document.querySelector('[b-data-poke-stats]');
 
- 
 
 
 const typeColors = {
@@ -42,7 +41,7 @@ const renderPokemonData = data => {
     const sprite =  data.sprites.front_default;
     const { stats, types } = data;
 
-    pokeName.textContent = data.name;
+    bPokeName.textContent = data.name;
     pokeImg.setAttribute('src', sprite);
     pokeId.textContent = `Nº ${data.id}`;
     setCardColor(types);
